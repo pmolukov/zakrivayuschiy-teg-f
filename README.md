@@ -1,1 +1,1 @@
-https://github.com/pmolukov/zakrivayuschiy-teg-f/tree/main
+https://github.com/pmolukov/zakrivayuschiy-teg-f
