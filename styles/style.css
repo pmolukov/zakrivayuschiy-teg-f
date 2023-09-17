@@ -31,7 +31,7 @@
 }
 
 .content-section {
-  width: var(--content-width, 48.3%);
+  width: var(--content-width, 49%);
   min-width: 375px;
 }
 
@@ -56,6 +56,7 @@
 .subtitle {
   margin-block-end: 25px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .theme-menu {
@@ -73,6 +74,7 @@
 
 .theme-menu__button {
   transition: 0.3s ease;
+  text-transform: uppercase;
 }
 
 .theme-menu__button:disabled {
@@ -101,8 +103,7 @@
 }
 
 .card__title {
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
+  margin: 5px 10px;
   font-variation-settings: "wght" var(--font-wght-bold, 700);
   font-size: 18px;
 }
@@ -175,7 +176,7 @@
 
 .button__wrap {
   display: flex;
-  gap: 12px;
+  gap: 5px;
   justify-content: right;
 }
 
