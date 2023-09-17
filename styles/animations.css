@@ -12,3 +12,42 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.theme-menu__button::after {
+  transition: 0.3s ease;
+  content: '';
+  display: block;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  height: 2px;
+  background-color: var(--text-color, #000);
+}
+
+.theme-menu__button:focus-visible::after {
+  transition: 0.3s ease;
+  transform: scaleX(1);
+}
+
+@keyframes pointer {
+  from {
+    inset-inline-start: -23px;
+  }
+  to {
+    inset-inline-start: -19px;
+
+  }
+}

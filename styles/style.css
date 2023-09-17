@@ -72,14 +72,21 @@
   position: relative;
 }
 
+.theme-menu__button {
+  transition: 0.3s ease;
+}
+
 .theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
+  transition: 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  inset-inline-start: -20px;
+  inset-inline-start: -23px;
+  animation: pointer 0.5s ease-in-out infinite alternate;
 }
 
 .main {
@@ -96,6 +103,7 @@
 
 .card__title {
   margin-inline-start: 10px;
+  margin-inline-end: 10px;
   font-variation-settings: 'wght' var(--font-wght-bold, 700);
   font-size: 18px;
 }
@@ -106,8 +114,27 @@
 }
 
 .card__image-wrap {
-  
+  position: relative;
 }
+
+.card__image-label {
+  font-family: var(--accent-font, sans-serif);
+  font-size: 14px;
+  position: absolute;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .card__image-label {
+      -webkit-text-stroke: 1px #fff;
+      text-stroke: 1px #fff;
+      text-shadow: none;
+  }
+} 
 
 .wrap {
   padding: 25px;
@@ -164,5 +191,18 @@
 @media (width <= 375px) {
   :root {
     --content-width: 100%;
+  }
+
+  .save-button {
+    flex-direction: column;
+  }
+
+  .save-button__image {
+    width: 28px;
+    height: 28px;
+  }
+
+  .floppy {
+    transform: scale(1.33);
   }
   }
