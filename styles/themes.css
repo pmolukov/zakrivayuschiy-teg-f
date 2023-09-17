@@ -10,6 +10,7 @@
   --bg-color: #fff;
   --text-color: #000;
   --bg-image: repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(#e7e7e7, #e7e7e7 0.01%, #1a1a1a);
+  --btn-text-color: #fff;
 }
 
 :root.theme-dark {
@@ -18,7 +19,7 @@
   --bg-color: #000;
   --text-color: #00CC14;
   --bg-image: repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #000, #000 2px, transparent 2px, transparent 4px), linear-gradient(#007f0c, #004306);
-
+  --btn-text-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,5 +29,6 @@
     --bg-color: #000;
     --text-color: #00CC14;
     --bg-image: repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #000, #000 2px, transparent 2px, transparent 4px), linear-gradient(#007f0c, #004306);
+    --btn-text-color: #00cc14;
   }
   }

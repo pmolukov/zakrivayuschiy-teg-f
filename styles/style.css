@@ -110,7 +110,8 @@
 
 .card__image {
   width: 100%;
-  height: 100%;
+  border-block-start: 2px solid var(--text-color, #000);
+  border-block-end: 2px solid var(--text-color, #000);
 }
 
 .card__image-wrap {
@@ -152,7 +153,10 @@
 }
 
 .card__icon-button {
-
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .like-icon {
@@ -162,13 +166,18 @@
 .card__like-button {
   padding: 11px 40px;
   border: 2px solid var(--text-color, #000);
-
+  transition: 0.3s ease;
+  position: relative;
 }
 
 .button__text {
   font-family: var(--accent-font, sans-serif);
   font-size: 14px;
   line-height: 90%;
+  position: relative;
+  mix-blend-mode: difference;
+  color: var(--btn-text-color, #fff);
+  z-index: 1;
 }
 
 .save-button {
@@ -181,11 +190,18 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
+  transition: 0.3s ease;
+  position: relative;
 }
 
 .save-button__image {
   width: 21px;
   height: 21px;
+  mix-blend-mode: difference;
+  color: var(--btn-text-color, #fff);
+  fill: var(--btn-text-color, #fff);
+  position: relative;
+  z-index: 1;
 }
 
 @media (width <= 375px) {
