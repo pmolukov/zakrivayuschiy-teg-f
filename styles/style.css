@@ -31,7 +31,7 @@
 }
 
 .content-section {
-  width: var(--content-width, 49%);
+  width: var(--content-width, 43.5rem);
   min-width: 375px;
 }
 
@@ -106,6 +106,7 @@
   margin: 5px 10px;
   font-variation-settings: "wght" var(--font-wght-bold, 700);
   font-size: 18px;
+  
 }
 
 .card__image {
@@ -221,6 +222,7 @@
   padding: 15px;
   transition: 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .save-button__image {
@@ -261,6 +263,7 @@
   padding: 32px;
   width: 357px;
   text-transform: uppercase;
+  margin: auto 17px;
 }
 
 .dialog::backdrop {

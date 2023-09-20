@@ -70,7 +70,7 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -107,7 +107,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -134,7 +134,7 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -171,7 +171,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -198,7 +198,7 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -235,7 +235,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -261,7 +261,7 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -298,7 +298,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -389,7 +389,7 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -426,7 +426,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -453,7 +453,7 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -490,7 +490,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -517,7 +517,7 @@
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           </p>
           <div class="button__wrap">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="submit">
               <svg
                 class="like-icon"
                 width="39"
@@ -554,7 +554,7 @@
                   />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="submit">
               <span class="button__text like-text">Like</span>
             </button>
           </div>
@@ -564,9 +564,11 @@
         type="button" 
         onclick="window['dialog'].showModal()" 
         aria-controls="dialog">
-        <svg class="save-button__image">
-          <use href="./svg/floppy.svg#floppy" class="floppy">
-        </svg>
+          <svg 
+            class="save-button__image" 
+            xmlns="http://www.w3.org/2000/svg">
+              <use href="./svg/floppy.svg#floppy" class="floppy">
+          </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="dialog">
@@ -578,7 +580,7 @@
           дискету, чтобы продолжить</p>
           </div>
         <form method="dialog">
-          <button class="close-button">
+          <button class="close-button" type="submit">
                 <span class="button__text">ок</span>
             </button>
         </form> 
