@@ -261,7 +261,7 @@
   font-size: 14px;
   line-height: 150%;
   padding: 32px;
-  width: 357px;
+  width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   text-transform: uppercase;
 }
 
